@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
     const navContent = <>
-        <li><a>Home</a></li>
-        <li><a>Blog</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/menu">Our Menu</Link></li>
     </>
     return (
        <div className="navbar z-10 bg-opacity-30 bg-black text-white fixed max-w-screen-xl">

@@ -16,7 +16,6 @@ const Main = () => {
             <PopularMenu></PopularMenu>
             <Recomand></Recomand>
             <CheckMenu></CheckMenu>
-            <Footer></Footer>
         </>
     );
 };
