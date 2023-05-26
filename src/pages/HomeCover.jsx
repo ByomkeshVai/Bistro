@@ -1,6 +1,5 @@
 import React from 'react';
 import chef from '../assets/home/chef-service.jpg'
-import { Parallax } from 'react-parallax';
 
 const HomeCover = () => {
     return (
