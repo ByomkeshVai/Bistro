@@ -6,6 +6,8 @@ import {
 import Home from '../layouts/Home';
 import Main from '../pages/Main';
 import Menu from '../layouts/Menu';
+import Login from '../authentication/Login';
+import Register from '../authentication/Register';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
             path: '/menu',
             element: <Menu></Menu>
+      },
+       {
+            path: '/login',
+            element: <Login></Login>
+      },
+        {
+            path: '/register',
+            element: <Register></Register>
         }
     ]
   },

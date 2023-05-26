@@ -4,11 +4,12 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../pages/shared/Footer';
 
 const Home = () => {
+    const headerPart = location.pathname.includes('login') || location.pathname.includes('register')
     return (
         <>
-            <Navbar></Navbar>
+            {headerPart || <Navbar></Navbar>}
             <Outlet></Outlet>
-            <Footer></Footer>
+            {headerPart || <Footer></Footer>}
         </>
     );
 };
